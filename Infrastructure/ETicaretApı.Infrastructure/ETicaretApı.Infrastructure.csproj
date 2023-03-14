@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\ETicaretAPI.Aplication\ETicaretAPI.Aplication.csproj" />
+    <ProjectReference Include="..\..\Core\ETicaretAPI.Aplication\ETicaretAPI.Application.csproj" />
   </ItemGroup>
 
 </Project>
