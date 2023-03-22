@@ -6,7 +6,7 @@ namespace ETicaretAPI.Domain.Entitites
     {
         public string Name { get; set; }
         public int Stock { get; set; }
-        public long Price { get; set; }
+        public float Price { get; set; }
 
         /// <summary>
         /// Bir productın birden fazla order'ı olduğunu ifade eder
