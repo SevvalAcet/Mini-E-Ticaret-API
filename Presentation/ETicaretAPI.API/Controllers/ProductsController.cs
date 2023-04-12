@@ -21,15 +21,19 @@ namespace ETicaretAPI.API.Controllers
             _customerWriteRepository = customerWriteRepository;
         }
 
+        //[HttpGet]
+        //public async Task Get()
+        //{
+        //    var customerId = Guid.NewGuid();
+        //    await _customerWriteRepository.AddAsync(new() { Id=customerId, Name = "Ahmet" });
+        //    await _orderWriteRepository.AddAsync(new() {Description="dfdf",Address="Ankara",CustomerId=customerId });
+        //    await _orderWriteRepository.SaveAsync();
+        //}
+
         [HttpGet]
-        public async Task Get()
+        public async Task<IActionResult> Get()
         {
-            var customerId = Guid.NewGuid();
-            await _customerWriteRepository.AddAsync(new() { Id=customerId, Name = "Ahmet" });
-
-            await _orderWriteRepository.AddAsync(new() {Description="dfdf",Address="Ankara",CustomerId=customerId });
-            await _orderWriteRepository.SaveAsync();
+            return Ok("ok");
         }
-
     }
 }
